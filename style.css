@@ -8,8 +8,8 @@
     --color-orange: #feb546;
     --color-pink: #fe918d;
     --color-dark-pink: #ff6863;
-    --color-sky: #d9eefd;
-    --color-deep-sky: #7D78FF;
+    --color-sky: #93c2e4;
+    --color-deep-sky: #508fe8;
     --color-blue: #73aace;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
@@ -46,9 +46,20 @@ a{
     color: var(--color-black);
 }
 ul{
-    list-style: none;
     padding-left:0;
 }
+
+li{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
 /* Typography */
     h1 {
         font-size: var(--font-large);
@@ -85,6 +96,8 @@ ul{
     justify-content: space-around; /*중심축은 수평축.*/
     align-items:center;
     padding: 5px 16px;
+    position:sticky;
+    top:0;
 }
 
 .navbar__nemu{
@@ -99,10 +112,10 @@ ul{
 }
 
 .navbar__menu__item.active{
-    color: var(--color-deep-sky);
+    color: var(--color-white);
 }
 .navbar__menu__item:hover{
-    color: var(--color-deep-sky);
+    color: var(--color-white);
 }
 
 .navbar__logo{
@@ -113,3 +126,31 @@ ul{
 .navbar__logo img {
     width: 25px;
 } 
+
+/* Home */
+#home{
+    background: url("imgs/home-background.png") center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__avatar{
+    width: 250px;
+    height: 250px;
+    border-radius:50%;
+    border: 2px solid var(--color-light-white);
+}
+
+.home__title, 
+.home__description{
+    color: var(--color-black);
+}
+
+.home__contact{
+    font-size:var(--font-regular);
+    font-weight:var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-deep-sky);
+    border-radius: 10px;
+}
