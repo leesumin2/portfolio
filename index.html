@@ -11,9 +11,9 @@
     <link rel="icon" type="image/png" href="imgs/favicon.png">
     <meta name="author" content="sumin">
     <script src="https://kit.fontawesome.com/d3c3132dbe.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Prompt&display=swap" rel="stylesheet">  <!-- font-family: 'Open Sans', sans-serif; -->
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 
 
 </head>
@@ -25,7 +25,7 @@
                 <img class="" src="imgs/logo.png" alt="logo">
                 <a href="#">SuMin's portfolio</a>
             </div>
-            <ul class="navbar__nemu">
+            <ul class="navbar__menu">
                 <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
                 <li class="navbar__menu__item">Skills</li>
@@ -41,13 +41,13 @@
         <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <div class="about__majors">
-            <div class="info_set">
+            <div class="info__set">
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-cake-candles"></i>
+                        <i class="fa-solid fa-cake-candles  fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-map-location-dot"></i>
+                        <i class="fa-solid fa-map-location-dot fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
@@ -86,7 +86,7 @@
                 </div>
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-phone  fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
@@ -99,7 +99,7 @@
                 </div>
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope  fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
@@ -112,14 +112,15 @@
                 </div>
                 <div class="info__detail">
                     <div class="info__img">
-                        <i class="fa-solid fa-school"></i>
+                        <i class="fa-solid fa-school  fa-2x"></i>
                     </div>
                     <div class="info__item">
                         <div class="info__title">
                             학력
                         </div>
                         <div class="info__content">
-                            성신여자대학교
+                            성신여자대학교<br>
+                            (정보시스템공학과)
                         </div>
                     </div>
                 </div>
@@ -128,19 +129,23 @@
         <div class="about__jobs">
             <div class="job">
                 <i class="fa-solid fa-building"></i>
-                <p class="job__name">한국전자투표 인턴</p>
-                <p class="job__period">2021.07 ~ 2021.12</p>
+                <div class="job__description">
+                    <p class="job__name">한국전자투표 인턴</p>
+                    <p class="job__period">2021.07 ~ 2021.12</p>
+                </div>
             </div>
             <div class="job">
                 <i class="fa-solid fa-laptop-file"></i>
-                <p class="job__name">청주 그린컴퓨터아트학원 백엔드 웹개발자 과정 수료</p>
-                <p class="job__period">2022.06 ~ 2022.12</p>
+                <div class="job__description">
+                    <p class="job__name">청주 그린컴퓨터아트학원 백엔드 웹개발자 과정 수료</p>
+                    <p class="job__period">2022.06 ~ 2022.12</p>
+                </div>
             </div>
         </div>
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills"  class="section">
         <h1>Skills</h1>
         <div class="skillset">
             <div class="skill__item">
@@ -164,7 +169,7 @@
         </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work"  class="section">
         <h1>My project</h1>
         <h3>Projects</h3>
         <div class="work__categories">
@@ -199,7 +204,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact"  class="section">
         <h1 class="contact__title">Contact</h1>
         <h2 class="contact__email">hjssjh2322@naver.com</h2>
         <div class="contact__links">
