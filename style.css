@@ -5,6 +5,7 @@
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
     --color-yellow: #fff7d1;
+    --color-light-pink:#FFDCBF;
     --color-orange: #feb546;
     --color-pink: #fe918d;
     --color-dark-pink: #ff6863;
@@ -173,8 +174,12 @@ p {
 .section {
     padding: 50px;
     text-align: center;
-    max-width: 1200px;
     margin: auto;
+}
+
+.section__container{
+    max-width: 1200px;
+    margin:auto;
 }
 
 /* About */
@@ -241,4 +246,33 @@ p {
 }
 .job__period{
     font-size: var(--font-micro);
+}
+
+/* Skill */
+#skills{
+    background-color: var(--color-light-pink);
+}
+.skillset{
+    display:flex;
+    align-items: flex-start;
+    justify-content : center;
+}
+.skill__item{
+    width: 250px;
+    background-color: var(--color-white);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #ccc;
+
+}
+.skill__item:hover{
+    transform: translate(0px, 8px);;
+    transition : all var(--animation-duration) ease;
+}
+.skill__title{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-dark-pink);
+    border-bottom: 1px solid #ccc;
 }
