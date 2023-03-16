@@ -1,6 +1,7 @@
 /* Global */
 :root {
     /* Color */
+    --color-arrow: #8694B3;
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
@@ -442,6 +443,27 @@ p {
     font-size: var(--font-small);
 }
 
+/* Scroll */
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    font-size: 35px;
+    width:50px;
+    height:50px;
+    border-radius: 10px;
+    background-color: var(--color-blue-nav);
+    color: navy;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    pointer-events:none;
+}
+
+.arrow-up.visible{
+    opacity:1;
+    pointer-events: auto;
+}
+
 /* For below 768px screen width */
 @media screen and (max-width:768px) {
     .navbar__toggle-btn {
@@ -470,8 +492,15 @@ p {
     }
 
     .project{
-        flex-grow:1;
+        flex-grow: 1;
     }
+
+    .arrow-up{
+        font-size: 25px;
+        width:40px;
+        height:40px;
+    }
+    
 }
 
 /* For below 986px screen width */
