@@ -99,7 +99,10 @@ p {
     color: var(--color-black);
     margin: 4px 0;
 }
-
+/* Common */
+#about, #skills, #work{
+    scroll-margin-top : 40px;
+}
 /*Navbar*/
 #navbar {
     position:fixed;
@@ -116,7 +119,7 @@ p {
 
 #navbar.navbar--change-color{
     background-color: var(--color-blue-nav); 
-    box-shadow: 0px 0px 3px #D5D5D5;
+    box-shadow: 0px 0px 5px #D5D5D5;
     padding: 2px;
 }
 
@@ -181,7 +184,8 @@ p {
     font-weight: var(--weight-bold);
     margin: 24px;
     padding: 8px 12px;
-    border: 2px solid var(--color-deep-sky);
+    border: 2px solid var(--color-blue);
+    color : var(--color-blue-black);
     border-radius: 10px;
 }
 
@@ -198,6 +202,7 @@ p {
 }
 
 /* About */
+
 .about__majors {
     display: flex;
     text-align: center;
