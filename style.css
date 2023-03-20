@@ -138,6 +138,9 @@ p {
     cursor: pointer;
     font-weight: var(--weight-semi-bold);
 }
+.navbar__menu__item.active{
+    color: var(--color-dark-pink);
+}
 
 .navbar__menu__item:hover {
     color: var(--color-dark-pink);
