@@ -519,12 +519,15 @@ p {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        display: none;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height var(--animation-duration) ease-out;
+        margin: 0;
     }
 
     .navbar__menu.open {
-        display: block;
-        transition: 300ms var(--animation-duration) ease-in-out;
+        margin-bottom: 0;
+        max-height:200px !important;
     }
 
     .info__set {
