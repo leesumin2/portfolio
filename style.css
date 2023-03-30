@@ -174,7 +174,7 @@ p {
 .home__avatar {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 30px;
     border: 2px solid var(--color-light-white);
 }
 
