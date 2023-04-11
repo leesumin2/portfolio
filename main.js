@@ -150,3 +150,17 @@ window.addEventListener('wheel', () => {
     }
     selectNavItem(navItems[selectedNavIndex]);
 })
+
+// 타이핑 효과
+const content = "I'm Lee Su-Min \n Front-end developer.";
+const text = document.querySelector('.text');
+let cnt = 0;
+
+const typing = () => {
+    if (cnt < content.length) {
+        let txt = content.charAt(cnt);
+        text.innerHTML += txt === "\n" ? "<br/>" : txt;
+        cnt++;
+    }
+}
+setInterval(typing, 200);
