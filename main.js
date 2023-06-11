@@ -152,7 +152,7 @@ window.addEventListener('wheel', () => {
 })
 
 // 타이핑 효과
-const content = "I'm Lee Su-Min \n Front-end developer.";
+const content = "I'm Lee Su-Min \n Welcome to my page";
 const text = document.querySelector('.text');
 let cnt = 0;
 
